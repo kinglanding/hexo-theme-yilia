@@ -2,7 +2,7 @@
 menu:
   主页: /
   所有文章: /archives
-  # 随笔: /tags/随笔
+  随笔: /tags/随笔
 
 # SubNav
 subnav:
@@ -10,7 +10,7 @@ subnav:
   weibo: "#"
   rss: "#"
   zhihu: "#"
-  #douban: "#"
+  douban: "#"
   #mail: "#"
   #facebook: "#"
   #google: "#"
@@ -24,6 +24,9 @@ excerpt_link: more
 fancybox: true
 mathjax: true
 
+plugins:
+- hexo-math
+
 # 是否开启动画效果
 animate: true
 
@@ -32,6 +35,7 @@ open_in_new: false
 
 # Miscellaneous
 google_analytics: ''
+# Place your favicon.ico to /source directory.
 favicon: /favicon.png
 
 #你的头像url
@@ -49,13 +53,7 @@ tagcloud: true
 #不开启——
 #friends: false
 #开启——
-friends:
-  奥巴马的博客: http://localhost:4000/
-  卡卡的美丽传说: http://localhost:4000/
-  本泽马的博客: http://localhost:4000/
-  吉格斯的博客: http://localhost:4000/
-  习大大大不同: http://localhost:4000/
-  托蒂的博客: http://localhost:4000/
+
 
 #是否开启“关于我”。
 #不开启——
