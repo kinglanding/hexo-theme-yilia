@@ -3,6 +3,7 @@ menu:
   主页: /
   所有文章: /archives
   随笔: /tags/随笔
+  搜索: /search
 
 # SubNav
 subnav:
@@ -59,4 +60,8 @@ tagcloud: true
 #不开启——
 #aboutme: false
 #开启——
-aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+aboutme: 有梦想就要去实现
+
+# 增加搜索
+search:
+  url: /search

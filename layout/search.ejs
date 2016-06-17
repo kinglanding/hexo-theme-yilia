@@ -1,0 +1,33 @@
+<%- partial('_partial/mathjax') %>
+<%- css('css/style') %>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<div id="site_search">
+
+    <div class="row" style="margin-top: 5%;margin-left: 5%; margin-right: 5%;" >
+        <!-- /.col-lg-6 -->
+        <div class="col-lg-6" style="max-width: 600px; min-width: auto">
+            <div class="input-group">
+                <input type="text" id="local-search-input" name="q" results="0"
+                       class="form-control" autofocus="autofocus" placeholder="Search for...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                </span>
+            </div>
+            <!-- /input-group -->
+        </div>
+        <!-- /.col-lg-6 -->
+    </div>
+    <!-- /.row -->
+
+</div>
+<div class="row" style="margin-left: 5%; margin-right: 5%;margin-bottom: 5%">
+
+    <div id="local-search-result" class="search search-type-post show is-hiddened"></div>
+
+</div>

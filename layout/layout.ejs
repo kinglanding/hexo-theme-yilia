@@ -1,15 +1,30 @@
 <%- partial('_partial/head') %>
 <body>
-  <div id="container">
+
+<!--加载jquery-->
+<%- js('http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js') %>
+<!--start 加载search_path函数 -->
+<%- js('js/search.js') %>
+<script type="text/javascript">
+    var search_path = "<%= config.search.path %>";
+    if (search_path.length == 0) {
+        search_path = "search.xml";
+    }
+    var path = "<%= config.root %>" + search_path;
+    searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
+<!--end of  加载search_path函数 -->
+
+<div id="container">
     <div class="left-col">
-    <%- partial('_partial/left-col', null, {cache: !config.relative_link}) %>
+        <%- partial('_partial/left-col', null, {cache: !config.relative_link}) %>
     </div>
     <div class="mid-col">
-      <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-      <div class="body-wrap"><%- body %></div>
-      <%- partial('_partial/footer') %>
+        <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
+        <div class="body-wrap"><%- body %></div>
+        <%- partial('_partial/footer') %>
     </div>
     <%- partial('_partial/after-footer') %>
-  </div>
+</div>
 </body>
 </html>
