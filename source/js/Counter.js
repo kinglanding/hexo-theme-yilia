@@ -76,7 +76,7 @@ $(function () {
     if ($('.leancloud_visitors').length == 1) {
         console.log($('.leancloud_visitors'));
         addCount(Counter);
-    } else if ($('.post-title-link').length > 1) {
+    } else if ($('.post-title-link').length >= 1) {
         showTime(Counter);
     }
 });
